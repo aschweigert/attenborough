@@ -90,17 +90,8 @@ div.audio-player {
 
 
 /* mute/unmute control */
-.mejs-controls .mejs-mute button, .mejs-controls .mejs-unmute button {
-  width: 18px;
-  height: 19px;
-  top: 9px;
-  right: 142px;
-  background: transparent url('audio.png') 0 0;
-}
-.mejs-controls .mejs-unmute button { background-position: 0 -19px; }
-
-
-/* volume scrubber bar */
+.mejs-controls .mejs-mute button,
+.mejs-controls .mejs-unmute button,
 .mejs-controls div.mejs-horizontal-volume-slider {
   display: none;
 }
@@ -121,18 +112,12 @@ div.audio-player {
 .mejs-controls .mejs-time-rail .mejs-time-total {
   background: #565860;
   width: 100% !important; /* fixes display bug using jQuery 1.8+ */
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   top: 0;
   left: 0;
   width: 0;
   background: #7b7d82;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 .mejs-controls .mejs-time-rail .mejs-time-current {
   top: 0;
@@ -141,6 +126,12 @@ div.audio-player {
   background: #fdd400;
 }
 
+.markers {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 70px;
+}
 .marker {
   position: absolute;
   top: 0;
@@ -149,7 +140,7 @@ div.audio-player {
   background: #fdd400;
 }
 
-.marker1 { left: 10%; }
+.marker1 { left: 17%; }
 .marker2 { left: 33%; }
 .marker3 { left: 65%; }
 .marker4 { left: 78%; }
